@@ -1,0 +1,14 @@
+{
+    "python.pythonPath": "C:\\Users\\steff\\.virtualenvs\\cycle_counting_py-XFDPUn8i\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "*test*.py"
+    ],
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.unittestEnabled": true
+}
