@@ -1,7 +1,7 @@
 import unittest
 import aoc_2018_py.day03 as day03
 
-class Test_Day02(unittest.TestCase):
+class Test_Day03(unittest.TestCase):
 
     def test_part_one(self):
         self.assertEqual(day03.part_one(), 120408)
