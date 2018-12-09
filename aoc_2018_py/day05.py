@@ -4,6 +4,7 @@ def solve():
     print("Remaining units in polymer chain: {}".format(part_one()))
     print("Reacted polymer, after clean-up: {}".format(part_two()))
 
+
 def remove_opposite_cases(text: List[str]):
     """
     TODO:
@@ -13,7 +14,7 @@ def remove_opposite_cases(text: List[str]):
     """
     changes = True
     last_passing = False
-    while changes:
+    while changes and len(text) >= 2:
         changes = False
         i = 1
         while i < len(text):
@@ -22,16 +23,9 @@ def remove_opposite_cases(text: List[str]):
                 changes = True
                 i -= 1
             i += 1
-        
-        if not changes and not last_passing:
-            last_passing = True
-        elif not changes and last_passing:
-            last_passing = False
-            
-        if len(text) < 2:
-            break
     
     return text
+
 
 def remove_opposite_cases_dac(text: str):
     if len(text) == 1:
