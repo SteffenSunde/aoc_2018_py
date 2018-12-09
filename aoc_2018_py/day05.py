@@ -36,9 +36,6 @@ def remove_opposite_cases_dac(text: str):
         else:
             return text
 
-    ## Divide and conquer part!
-    #remove_opposite_cases(first_half) + remove_opposite_cases(second_half)
-    
 
 def part_one():
     polymer = []
