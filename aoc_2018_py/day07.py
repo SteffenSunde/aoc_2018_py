@@ -85,6 +85,6 @@ def part_two():
         time += 1
 
     # Finally, get the remaining time on the last set of instructions
-    time += sum([val for _, val in working_queue.items()])
+    time += sum([val for _, val in working_queue.items()]) # This has probably a bug if multiple jobs remains
 
     return time
