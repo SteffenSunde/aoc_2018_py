@@ -6,7 +6,7 @@ def solve():
 
 
 class Node(object):
-    # A simple recursive data structure to represent a tree
+    # A simple data structure to represent a tree with data and children nodes.
     def __init__(self):
         self.data = []
         self.children = []
@@ -23,6 +23,7 @@ def read_ints(file_path: str) -> List[int]:
 
 
 def parse_tree(input_data: List[int]) -> Node:
+    # Parses the list of integers as a recursive tree, returning its root node
 
     pointer = 0  # Offset to continuously run through input list
     while pointer < len(input_data):
