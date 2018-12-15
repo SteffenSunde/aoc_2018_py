@@ -6,11 +6,11 @@ def solve():
 
 
 class Node(object):
-    # A simple data structure to represent a tree with data and children nodes.
+    # A simple recursive data structure to represent a tree with data and children nodes.
     def __init__(self):
-        self.data = []
-        self.children = []
-        self.end = None
+        self.data = []  # type: List[int]
+        self.children = []  # type: List[Node]
+        self.end = None  # type: int
 
     def add_child(self, node):
         self.children.append(node)
