@@ -48,6 +48,7 @@ class Test_Day11(unittest.TestCase):
     def test_part_one(self):
         self.assertEqual(day11.part_one(), (243, 72))
     
+    
     def test_part_two(self):
         self.assertEqual(day11.part_two(), (229, 192, 11))
 
